@@ -1,0 +1,27 @@
+.icon-send {
+  height: 24px;
+  width: 24px;
+  fill: $title-text-color;
+}
+.sign {
+  width: 330px;
+  height: 46px;
+  background-color: transparent;
+  border: 1px solid $sign-border-color;
+  border-radius: 4px;
+  color: $secondary-text-color;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  align-items: center;
+  padding-left: 16px;
+  &::placeholder {
+    outline-color: $secondary-text-color;
+    background-color: transparent;
+  }
+  &:focus {
+    outline-color: $acent-text-color;
+    margin: 0;
+    border-width: 0;
+  }
+}

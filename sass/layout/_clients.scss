@@ -1,0 +1,45 @@
+.clients {
+  margin-bottom: 94px;
+  margin-right: 0px;
+  & h2 {
+    color: $h-text-color;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-align: center;
+    padding-bottom: 50px;
+  }
+  &-list {
+    width: 170px;
+    height: 90px;
+    border: 1px solid $social-link-fill;
+    border-radius: 4px;
+    margin-right: 27px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+      border: 1px solid $acent-text-color;
+    }
+    &:hover .logo-clients {
+      fill: $acent-text-color;
+    }
+    &:nth-child(6n) {
+      margin-right: 0px;
+    }
+  }
+}
+.our-clients {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 0px;
+}
+.logo-clients {
+  height: 50px;
+  width: 45px;
+  fill: $social-link-fill;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

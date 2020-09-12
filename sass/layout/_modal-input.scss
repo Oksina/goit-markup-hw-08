@@ -1,0 +1,17 @@
+label {
+  margin-bottom: 4px;
+}
+.field-wrap {
+  position: relative;
+}
+input {
+  width: 400px;
+  height: 38px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  margin-bottom: 10px;
+  padding-left: 40px;
+  &:hover {
+    border: 1px solid var(--acent-text-color);
+  }
+}

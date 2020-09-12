@@ -1,0 +1,13 @@
+textarea {
+  width: 425px;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  margin-bottom: 20px;
+  padding-left: 16px;
+  padding-top: 12px;
+  padding-bottom: 0;
+  &::placeholder {
+    margin: 0;
+  }
+}

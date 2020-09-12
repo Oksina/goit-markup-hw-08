@@ -1,0 +1,36 @@
+.hero {
+  background-color: $secondary-background-color;
+  color: $title-text-color;
+  text-align: center;
+  margin-bottom: 94px;
+  height: 600px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/Header.jpg);
+  & h1 {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    display: block;
+    padding-top: 200px;
+  }
+  & a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    color: $title-text-color;
+    line-height: 1.875;
+    letter-spacing: 0.06em;
+    text-align: center;
+  }
+}

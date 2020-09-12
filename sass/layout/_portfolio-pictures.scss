@@ -1,0 +1,10 @@
+.portf-picture {
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+  &:hover .gallery-hover {
+    opacity: 0.8;
+    height: 294px;
+    transform: translateY(0);
+  }
+}

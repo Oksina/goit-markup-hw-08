@@ -1,0 +1,56 @@
+.modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 528px;
+  min-height: 581px;
+  background: $title-text-color;
+  border-radius: 4px;
+  & .backdrop-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    height: 30px;
+    width: 30px;
+    background-color: $title-text-color;
+    padding: 0;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+  }
+  & p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.03em;
+    margin-bottom: 12px;
+    color: $h-text-color;
+  }
+  &-form {
+    margin: 40px 40px;
+  }
+}
+.icon-close {
+  width: 11px;
+  height: 11px;
+  padding: 0;
+}
+.btn-send {
+  display: flex;
+  background-color: $acent-text-color;
+  padding: 10px 32px;
+  align-items: center;
+  text-decoration: none;
+  border-color: transparent;
+  border-radius: 4px;
+  margin: auto;
+  color: $title-text-color;
+  justify-content: center;
+  margin-top: 40px;
+}

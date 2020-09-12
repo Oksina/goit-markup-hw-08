@@ -1,0 +1,25 @@
+.features .list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 0px;
+  margin-left: 0px;
+  justify-content: space-between;
+}
+.features-item {
+  width: calc((100% - 90px) / 4);
+  margin-right: 0px;
+}
+.item-image {
+  width: 270px;
+  height: 120px;
+  background: $background-color;
+  border-radius: 4px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.item-icon {
+  width: 70px;
+  height: 70px;
+}

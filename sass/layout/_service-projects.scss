@@ -1,0 +1,16 @@
+.job {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.service-job {
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+  position: relative;
+  height: 294px;
+  background-color: blue;
+}
+
+.service-job:nth-child(3n) {
+  margin-right: 0px;
+}

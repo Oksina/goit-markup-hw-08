@@ -1,0 +1,27 @@
+.text {
+  & .container {
+    margin-bottom: 94px;
+  }
+  & img {
+    background-color: $background-color;
+    margin-bottom: 30px;
+  }
+  & h2 {
+    margin: 0px;
+    align-content: center;
+    display: none;
+  }
+  & h3 {
+    color: $h-text-color;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  & a:hover {
+    color: $acent-text-color;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}

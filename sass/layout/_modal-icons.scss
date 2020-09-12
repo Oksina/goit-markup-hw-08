@@ -1,0 +1,30 @@
+.user-icon {
+  fill: $logo-color;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  :focus {
+    fill: $acent-text-color;
+  }
+}
+.icon-person {
+  position: absolute;
+  top: 11px;
+  left: 12px;
+  width: 18px;
+  height: 18px;
+}
+
+.icon-phone {
+  position: absolute;
+  top: 11px;
+  left: 12px;
+  width: 18px;
+  height: 18px;
+}
+.icon-email {
+  position: absolute;
+  top: 11px;
+  left: 12px;
+  width: 18px;
+  height: 18px;
+}
