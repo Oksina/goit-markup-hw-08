@@ -1,15 +1,30 @@
 .contacts {
-  margin-left: auto;
+  display: none;
+  @include for-size(tablet-landscape) {
+    display: block;
+    width: 135px;
+    margin-left: auto;
+  }
+  @include for-size(laptop) {
+    width: 100%;
+    display: inline-flex;
+    margin-left: 290px;
+  }
   & .main-contacts {
     color: $primary-text-color;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
+    font-size: 12px;
+    line-height: 1.17;
     letter-spacing: 0.02em;
     text-decoration: none;
-    display: inline-flex;
-    padding-bottom: 32px;
-    padding-top: 32px;
+    padding-bottom: 21px;
+    padding-top: 21px;
+    @include for-size(laptop) {
+      font-size: 14px;
+      line-height: 1.14;
+      padding-bottom: 32px;
+      padding-top: 32px;
+    }
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus {
@@ -21,13 +36,17 @@
     }
   }
   & a + a {
-    margin-left: 30px;
+    @include for-size(laptop) {
+      margin-left: 30px;
+    }
   }
 }
 .icon-contacts {
   height: 16px;
   width: 15px;
-  margin-right: 10px;
+  @include for-size(laptop) {
+    margin-right: 10px;
+  }
   fill: $primary-text-color;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }

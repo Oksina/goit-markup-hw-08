@@ -1,7 +1,10 @@
 .site-nav {
   margin-top: 0px;
   margin-bottom: 0px;
-  display: flex;
+  display: none;
+  @include for-size(tablet-landscape) {
+    display: flex;
+  }
   & .link.current {
     color: $acent-text-color;
   }

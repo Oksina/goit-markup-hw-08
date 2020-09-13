@@ -1,24 +1,42 @@
 .clients {
-  margin-bottom: 94px;
+  margin-bottom: 60px;
   margin-right: 0px;
+  justify-content: center;
+  @include for-size(laptop) {
+    margin-bottom: 94px;
+  }
   & h2 {
     color: $h-text-color;
     font-weight: bold;
-    font-size: 36px;
-    line-height: 42px;
+    font-size: 28px;
+    line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
     text-align: center;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
+    @include for-size(laptop) {
+      font-size: 36px;
+      line-height: 1.17;
+      padding-bottom: 50px;
+    }
   }
   &-list {
-    width: 170px;
+    width: 206px;
     height: 90px;
+    justify-content: center;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    @include for-size(tablet-portrait) {
+      &:nth-last-child(-n + 2) {
+        margin-bottom: 0px;
+      }
+    }
+    &:nth-child(2n) {
+      margin-right: 0px;
+    }
     border: 1px solid $social-link-fill;
     border-radius: 4px;
-    margin-right: 27px;
     display: inline-flex;
-    justify-content: center;
     align-items: center;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover {
@@ -27,8 +45,19 @@
     &:hover .logo-clients {
       fill: $acent-text-color;
     }
-    &:nth-child(6n) {
+
+    @include for-size(tablet-landscape) {
+      width: 222px;
+      height: 90px;
       margin-right: 0px;
+      &:nth-last-child(-n + 3) {
+        margin-bottom: 0px;
+      }
+    }
+    @include for-size(laptop) {
+      width: 164px;
+      height: 90px;
+      margin-bottom: 0px;
     }
   }
 }
@@ -36,10 +65,11 @@
   display: flex;
   flex-wrap: wrap;
   margin-right: 0px;
+  justify-content: space-between;
 }
 .logo-clients {
   height: 50px;
-  width: 45px;
+  width: 50px;
   fill: $social-link-fill;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }

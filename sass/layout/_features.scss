@@ -1,6 +1,10 @@
 .text {
   & .container {
-    margin-bottom: 94px;
+    margin-bottom: 60px;
+    @include for-size(laptop) {
+      margin-bottom: 94px;
+    }
+    //width: 270px;
   }
   & img {
     background-color: $background-color;
@@ -16,6 +20,7 @@
     font-weight: bold;
     font-size: 14px;
     line-height: 1.14;
+    text-align: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-bottom: 10px;

@@ -1,4 +1,8 @@
 .service {
+  display: none;
+  @include for-size(laptop) {
+    display: flex;
+  }
   margin-bottom: 94px;
   & h2 {
     color: $h-text-color;
@@ -20,7 +24,7 @@
     text-align: center;
     text-transform: uppercase;
     position: absolute;
-    width: 100%;
+    width: 370px;
     bottom: 0px;
     padding-top: 27px;
     padding-bottom: 27px;

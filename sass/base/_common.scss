@@ -28,16 +28,30 @@ body {
 }
 
 .container {
-  width: 1170px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-}
 
+  @include for-size(tablet-portrait) {
+    width: 450px;
+  }
+  @include for-size(tablet-landscape) {
+    width: 738px;
+  }
+  @include for-size(laptop) {
+    width: 1170px;
+  }
+}
+//* {
+// outline: 2px solid tomato;
+//}
 .main-menu {
   align-items: center;
-  display: flex;
+  @include for-size(tablet-landscape) {
+    display: flex;
+  }
 }
 .link {
   color: $h-text-color;
@@ -58,4 +72,9 @@ body {
     color: $acent-text-color;
     outline-color: $acent-text-color;
   }
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
