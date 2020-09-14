@@ -37,10 +37,14 @@ label .check {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: $primary-text-color;
+  @include for-size(laptop) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 .check-doc {
   color: $acent-text-color;

@@ -18,12 +18,12 @@
   &:nth-last-child(-n + 2) {
     margin-bottom: 0px;
   }
-  //width: 354px;
-
+  @include for-size(tablet-portrait) {
+    margin-bottom: 30px;
+  }
   @include for-size(laptop) {
     width: calc((100% - 90px) / 4);
     margin-bottom: 0px;
-    //width: 270px;
   }
 }
 .item-image {

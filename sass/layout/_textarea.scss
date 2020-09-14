@@ -1,12 +1,16 @@
 textarea {
-  width: 425px;
-  height: 120px;
+  width: 95%;
+  height: 118px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   margin-bottom: 20px;
   padding-left: 16px;
   padding-top: 12px;
   padding-bottom: 0;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
   &::placeholder {
     margin: 0;
   }

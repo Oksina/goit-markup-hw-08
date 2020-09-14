@@ -1,0 +1,28 @@
+.burger-button {
+  //display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  & .icon-burger-close {
+    display: none;
+  }
+  & .is-open {
+    &.icon-burger-menu {
+      display: none;
+    }
+    &.icon-burger-close {
+      display: block;
+    }
+  }
+
+  &:hover .icon-burger-close,
+  &:focus .icon-burger-close,
+  &:hover .icon-burger-menu,
+  &:focus .icon-burger-menu {
+    fill: $acent-text-color;
+  }
+}

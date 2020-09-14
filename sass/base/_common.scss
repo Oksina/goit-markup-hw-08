@@ -49,7 +49,11 @@ body {
 //}
 .main-menu {
   align-items: center;
+  display: block;
+  height: 60px;
+  position: relative;
   @include for-size(tablet-landscape) {
+    height: 80px;
     display: flex;
   }
 }

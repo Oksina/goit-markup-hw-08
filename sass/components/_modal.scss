@@ -5,26 +5,20 @@
   transform: translate(-50%, -50%);
   background: $title-text-color;
   border-radius: 4px;
-  @media screen and (min-width: 451px) and (max-width: 1169px) {
-    .modal {
-      width: 450px;
-      height: 609px;
-      font-size: 20px;
-      line-height: 1.5;
-    }
+  width: 450px;
+  //height: 609px;
+  font-size: 20px;
+  line-height: 1.5;
+
+  @include for-size(laptop) {
+    width: 528px;
+    //height: 581px;
   }
 
-  @media (min-width: 1200px) {
-    .modal {
-      width: 528px;
-      height: 581px;
-    }
-  }
   & .backdrop-btn {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-
     position: absolute;
     right: 8px;
     top: 8px;
@@ -42,7 +36,7 @@
     font-size: 20px;
     line-height: 1.15;
     letter-spacing: 0.03em;
-    margin-bottom: 12px;
+    text-align: center;
     color: $h-text-color;
   }
   &-form {
@@ -65,5 +59,8 @@
   margin: auto;
   color: $title-text-color;
   justify-content: center;
-  margin-top: 40px;
+  margin-top: 30px;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
 }

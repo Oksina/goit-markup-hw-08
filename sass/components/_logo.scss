@@ -7,7 +7,10 @@
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-decoration: none;
+  position: absolute;
+  top: 17px;
   @include for-size(tablet-landscape) {
+    position: unset;
     margin-right: 85px;
   }
   @include for-size(laptop) {
