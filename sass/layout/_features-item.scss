@@ -12,14 +12,12 @@
   margin-right: 0px;
   margin-bottom: 30px;
   width: 450px;
+
   @include for-size(tablet-landscape) {
     width: calc((100% - 30px) / 2);
-  }
-  &:nth-last-child(-n + 2) {
-    margin-bottom: 0px;
-  }
-  @include for-size(tablet-portrait) {
-    margin-bottom: 30px;
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0px;
+    }
   }
   @include for-size(laptop) {
     width: calc((100% - 90px) / 4);

@@ -1,12 +1,15 @@
 .portf {
-  //display: flex;
+  display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
   margin-left: 0px;
   margin-right: 0px;
-  //margin-bottom: 94px;
+  margin-bottom: 30px;
   padding-left: 0px;
   padding-right: 0px;
-
+  @include for-size(laptop) {
+    margin-bottom: 64px;
+  }
   &-text h2 {
     font-family: "Roboto", sans-serif;
     font-weight: bold;
@@ -33,13 +36,13 @@
     color: $title-text-color;
   }
   &-text {
-    width: 350px;
+    //width: 350px;
     height: 100%;
     padding-bottom: 20px;
     margin-left: 24px;
-    margin-right: 24px;
+    //margin-right: 24px;
   }
 }
-.portf li {
-  width: 370px;
-}
+//.portf li {
+//width: 100%;
+//}

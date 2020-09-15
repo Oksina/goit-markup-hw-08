@@ -15,9 +15,12 @@
       rgba(47, 48, 58, 0.4)
     ),
     url(../images/mobile/Header-mobile1x.png);
-  @media screen and (min-device-pixel-ratio: 2),
+  @media screen and (min-device-pixel-ratio: 2) and(max-width:767px),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
+    height: 400px;
+    max-width: 480px;
+    background-size: initial;
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
