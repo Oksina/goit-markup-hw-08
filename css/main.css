@@ -446,6 +446,13 @@ img {
   height: auto;
 }
 
+picture {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-right: 0px;
+}
+
 .logo {
   color: #000000;
   font-family: "Raleway", sans-serif;
@@ -478,33 +485,47 @@ img {
   color: #2196f3;
 }
 
-.burger-button {
+.mobile-menu-button {
   margin: 0;
   padding: 0;
   border: none;
-  background-color: transparent;
   position: absolute;
   top: 10px;
   right: 10px;
 }
 
-.burger-button .icon-burger-close {
+.mobile-menu-button.icon-burger-close {
   display: none;
 }
 
-.burger-button .is-open.icon-burger-menu {
-  display: none;
-}
-
-.burger-button .is-open.icon-burger-close {
+.mobile-menu-button.icon-burger-menu {
   display: block;
 }
 
-.burger-button:hover .icon-burger-close,
-.burger-button:focus .icon-burger-close,
-.burger-button:hover .icon-burger-menu,
-.burger-button:focus .icon-burger-menu {
+.mobile-menu-button.is-open .icon-burger-menu {
+  display: none;
+}
+
+.mobile-menu-button.is-open .icon-burger-close {
+  outline: none;
+}
+
+.mobile-menu-button:hover .icon-burger-close,
+.mobile-menu-button:focus .icon-burger-close,
+.mobile-menu-button:hover .icon-burger-menu,
+.mobile-menu-button:focus .icon-burger-menu {
   fill: #2196f3;
+}
+
+.mobile-menu-button .icon-burger-menu,
+.mobile-menu-button .icon-burger-close {
+  fill: #000000;
+}
+
+@media (min-width: 768px) {
+  .mobile-menu-button {
+    display: none;
+  }
 }
 
 .site-nav {
@@ -781,15 +802,8 @@ img {
   .features-item {
     width: calc((100% - 30px) / 2);
   }
-}
-
-.features-item:nth-last-child(-n + 2) {
-  margin-bottom: 0px;
-}
-
-@media (min-width: 480px) {
-  .features-item {
-    margin-bottom: 30px;
+  .features-item:nth-last-child(-n + 2) {
+    margin-bottom: 0px;
   }
 }
 
